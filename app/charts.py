@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 def generate_bar_chart(name, labels, values):
   fig, ax = plt.subplots()
   ax.bar(labels, values)
-  plt.savefig(f'./imgs/{name}.png')
+  #plt.savefig(f'./imgs/{name}.png')
+  plt.savefig('{}.png'.format(name))
   plt.close()
 
 def generate_pie_chart(labels, values):
